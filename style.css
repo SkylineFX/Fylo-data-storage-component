@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-Blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+  }
+
+body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:  url(images/bg-desktop.png) no-repeat center bottom;
+    background-color: var(--very-dark-blue);
+    background-size: 100% 50%;
+    /* background-size: contain; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.content{
+    display: flex;
+}
+
+section{
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+}
+
+.sec-logo{
+    border-radius: 10px 70px 10px 10px;
+    margin-right: 1.875rem;
+    width: 280px;
+    height: 150px;
+}
+.logo img{
+    width: 110px;
+    max-height: auto;
+    margin: 30px 0 0 30px;
+}
+/* .sec-logo > div{
+    margin: 30px 0 0 30px;
+} */
+
+.icons{
+    display: flex;
+    margin: 20px 0 0 30px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--very-dark-blue);
+    border-radius: 8px;
+}
+
+.icon img{
+    background-color: var(--very-dark-blue);
+}
+.icon-1 img{
+    height: 20px;
+    max-width: auto;
+}
+.icon-2 img{
+    height: 17px;
+    max-width: auto;
+}
+.icon-3 img{
+    height: 15px;
+    max-width: auto;
+}
+
+.sec-details{
+    color: var(--pale-blue);
+    align-self: flex-end;
+    width: 480px;
+    height: 120px;
+}
+
+.sec-details .wrapper{
+    margin: 30px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.sec-details span{
+    font-weight: 700;
+}
+
+
+.bar-bg{
+    display: flex;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+    width: 400px;
+    height: 15px;
+    border-radius: 50px;
+    margin:15px 0 10px 0;
+}
+.bar-gradient{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 2px;
+    background-image: linear-gradient(to right, #FCA29A, #F55095);
+    width: 300px;
+    height: 11px;
+    border-radius: 50px;
+}
+.bar-point{
+    align-self: center;
+    justify-self: flex-end;
+    margin-right:2px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50px;
+    background-color: var(--pale-blue);
+    
+}
+
+.bar-details{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
